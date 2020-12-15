@@ -1,0 +1,115 @@
+<?php
+ include 'search.dbh.php';
+ 
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+<link rel="styleSheet" type="text/css" href="aryenn.css" />
+<title>
+ARYEN SCHOOLS</title>
+<p id="demo"></p>
+<script>
+var i=0;
+var images = [];
+var time = 5000;
+images[0]= 'CHANCELLOR.jpg';
+images[1]= 'GRADUATION.jpg';
+images[2]= 'STUDENTS.jpg';
+images[3]= 'SIGN.jpg';
+function changeImg(){
+document.slide.src = images[i];
+	if(i < images.length - 1){
+		i++;
+	}else{
+		i = 0;
+	}
+	setTimeout("changeImg()", time);
+
+}
+window.onload = changeImg;
+</script>
+  <script>
+        function createAccount() {
+            var a = document.forms['carcreate']['fname'].value;
+            if (a == null || a == "") {
+                alert("First Name must be filled !!");
+                return false;
+            }
+            
+            var c = document.forms['carcreate']['password'].value;
+            if (c == null || c == "") {
+                alert("Password must be filled !!");
+                return false;
+            }
+            
+        }
+    </script>
+
+</head>
+<body>
+<script language="JavaScript">
+document.write("Hello "+name"!,Welcome and Book with us");
+</script>
+<div class="hdr">
+<div class="machakos">
+<a href="Aryenn.php"><img src="logo.png" align="center"></a>
+<b><u color="red"><font size=4 color="dark-yellow">ARYEN SCHOOLS.</font></u></b>
+Soaring heights in transforming Industry and Economy
+<button class="dropbtn"><a href="Aryenn.php">HOME</a></button>
+<button class="dropbtn"><a href="GALLERY.php">PICTURE GALLERY</a></button>
+<button class="dropbtn"><a href="assignmentsignup.php">STUDENT SIGNUP</a></button>
+<button class="dropbtn"><a href="staffsignup.php">STAFF SIGNUP</a></button>
+<div class="dropdown">
+<button class="dropbtn">DISCOVER ARYEN</button>
+<div class="dropdown-content">
+<a href="REGISTERED.php">REGISTERED STUDENTS</a>
+<a href="OURSTAFF.php">OUR STAFF</a>
+<a href="OFFICERS.html">SCHOOL OFFICERS</a>
+</div></div>
+<button class="dropbtn"><a href="ARYENSIGNIN.php">LOGIN AS ADMIN</a></button>
+<button class="dropbtn"><a href="CONTACT.php">CONTACT ARYEN</a></button>
+<button class="dropbtn"><a href="ARYENCHAT.php">CHAT</a></button>
+<form class="form1" action="search.php" method="POST">
+<input class="search-area" type="search" name="search" placeholder="SEARCH">
+<input class="search-btn"  type="submit" name="submit" value="SEARCH">
+<div class="tooltip">
+<input class="dropbtn" type="button" value="NEXT" onclick='history.forward()'>
+<span class="tooltiptext">Click to go to next page</span>
+</div>
+</form><br /><br /><div align="right">
+</div>
+</div>
+<div class="hedr" ><img name="slide" class="timg"></div>
+<h2 class="ttle">
+WELCOME TO ARYEN SCHOOLS</h2>
+ARYEN SCHOOLS was founded in 1957 as a Technical Training School by the then colonial Government. It was converted into ARYEN Technical and Trade School in 1958, ARYEN Technical School in 1967, ARYEN SCHOOLS Collage in 2013 and chartered to ARYEN SCHOOLS in October 2016.
+<div>
+<section class="gallery-links">
+<div class="wrapper">
+<div class="gallery-container">
+
+</div>
+
+</div>
+</div>
+<div class="sect" align="center">
+<br /><br /><br />
+<div class="sectt"><br /><br />
+<button class="dropbtn"><a href="Aryenn.html">HOME</a></button>
+<button class="dropbtn"><a href="GALLERY.html">PICTURE GALLERY</a></button>
+<button class="dropbtn"><a href="assignmentsignup.html">SIGN UP AS STUDENT</a></button>
+<button class="dropbtn"><a href="REGISTERED.html">REGISTERED STUDENTS</a></button>
+<button class="dropbtn"><a href="CONTACT.html">CONTACT ARYEN</a></button>
+<button class="dropbtn"><a href="staffsignup.html">SIGN UP AS STAFF</a></button>
+<button class="dropbtn"><a href="ARYENSIGNIN.html">LOGIN AS ADMIN</a></button>
+<button class="dropbtn"><a href="OURSTAFF.html">OUR STAFF</a></button>
+<button class="dropbtn"><a href="ARYENCHAT.html">CHAT</a></button>
+</div>
+</div>
+<div class="fter">
+CREATED BY vic#
+</div>
+</body>
+</html>
